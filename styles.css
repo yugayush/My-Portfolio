@@ -746,13 +746,13 @@ strong {
 /* === Scroll Indicator === */
 .scroll-indicator {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 12px;
+    gap: 20px;
     color: var(--text-muted);
     font-size: 0.8rem;
     animation: bounce 2s infinite;
@@ -1009,6 +1009,12 @@ strong {
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 40px;
     overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.tab-list::-webkit-scrollbar {
+    display: none;
 }
 
 .tab-btn {
@@ -1592,6 +1598,10 @@ strong {
     .skills-wrapper {
         grid-template-columns: 1fr;
     }
+
+    .scroll-indicator {
+        display: none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1657,5 +1667,9 @@ strong {
 
     .contact-grid {
         grid-template-columns: 1fr;
+    }
+
+    .scroll-indicator {
+        display: none;
     }
 }
