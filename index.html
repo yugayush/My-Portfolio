@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yug Swarnkar - Full-Stack Software Developer">
+    <title>Yug Swarnkar | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Cursor Glow Effect -->
+    <div class="cursor-glow" id="cursor-glow"></div>
+
+    <!-- Floating Shapes Background -->
+    <div class="floating-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>YS<span class="logo-bracket">/&gt;</span>
+            </a>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#experience" class="nav-link"><span class="nav-number">01.</span>Experience</a>
+                <a href="#projects" class="nav-link"><span class="nav-number">02.</span>Projects</a>
+                <a href="#skills" class="nav-link"><span class="nav-number">03.</span>Skills</a>
+                <a href="#contact" class="nav-link"><span class="nav-number">04.</span>Contact</a>
+            </div>
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="sun-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <circle cx="12" cy="12" r="5" />
+                        <path
+                            d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+                    </svg>
+                    <svg class="moon-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                        stroke-width="2">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+                    </svg>
+                </button>
+                <a href="mailto:yugayush123@gmail.com" class="nav-cta">Let's Talk</a>
+                <a href="resume.pdf" download class="nav-cta nav-resume">Resume</a>
+            </div>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-name">
+                    <span class="name-line">Hi, I'm</span>
+                    <span class="name-main">Yug Swarnkar</span>
+                </h1>
+                <div class="hero-title-wrapper">
+                    <span class="title-prefix">I build</span>
+                    <div class="rotating-text">
+                        <span>scalable applications</span>
+                        <span>secure systems</span>
+                        <span>elegant solutions</span>
+                    </div>
+                </div>
+                <p class="hero-description">
+                    A <strong>Creative Tech Sculptor</strong> dedicated to building seamless digital experiences.
+                    With a strong
+                    foundation in <span>Full-stack Development</span> and open-source collaboration, I bridge the gap
+                    between complex
+                    logic and user-friendly design, ensuring every pixel and line of code serves a purpose.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">90%</span>
+                        <span class="stat-label">Bot Reduction</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">30%</span>
+                        <span class="stat-label">API Optimization</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Devs Collaborated</span>
+                    </div>
+                </div>
+                <div class="hero-actions">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore My Work</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7" />
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+                </div>
+                <div class="hero-social">
+                    <span class="social-line"></span>
+                    <a href="https://www.linkedin.com/in/yug-swarnkar-26b9b8220/" target="_blank" class="social-link"
+                        aria-label="LinkedIn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                        </svg>
+                    </a>
+                    <a href="https://github.com/yugayush" target="_blank" class="social-link" aria-label="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                        </svg>
+                    </a>
+                    <a href="https://leetcode.com/u/yugayush/" target="_blank" class="social-link"
+                        aria-label="LeetCode">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z" />
+                        </svg>
+                    </a>
+                    <span class="social-line"></span>
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="profile-wrapper">
+                    <div class="profile-ring"></div>
+                    <div class="profile-ring ring-2"></div>
+                    <div class="profile-image">
+                        <img src="profile.jpg" alt="Yug Swarnkar">
+                    </div>
+                    <div class="profile-decoration dec-1">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0L14.59 8.41L23 11L14.59 13.59L12 22L9.41 13.59L1 11L9.41 8.41L12 0Z" />
+                        </svg>
+                    </div>
+                    <div class="profile-decoration dec-2">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                            <circle cx="12" cy="12" r="10" />
+                        </svg>
+                    </div>
+                    <div class="profile-decoration dec-3">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="code-snippet">
+                    <div class="code-header">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                        <span class="code-title">developer.js</span>
+                    </div>
+                    <pre class="code-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Yug Swarnkar"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full-Stack Dev"</span>,
+  <span class="code-prop">passion</span>: <span class="code-string">"Building Impact"</span>
+};</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll to explore</span>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <h2 class="section-title">Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="experience-tabs">
+                <div class="tab-list">
+                    <button class="tab-btn active" data-tab="itjobxs">ITJobxs</button>
+                    <button class="tab-btn" data-tab="gssoc">GirlScript SoC</button>
+                </div>
+                <div class="tab-content">
+                    <div class="tab-panel active" id="itjobxs">
+                        <h3 class="job-title">Software Development Intern <span class="job-company">@ ITJobxs</span>
+                        </h3>
+                        <p class="job-meta">June 2024 — August 2024 • Gurugram, India</p>
+                        <ul class="job-list">
+                            <li>Reduced fraudulent bot activity by <strong>90%</strong> by designing and implementing a
+                                robust user authentication system from the ground up</li>
+                            <li>Engineered a secure login/signup workflow using modern security practices, ensuring data
+                                protection and seamless user experience</li>
+                            <li>Developed and optimized RESTful APIs using <strong>Spring Boot</strong>, achieving a
+                                <strong>30% reduction</strong> in data fetch time through efficient query tuning
+                            </li>
+                            <li>Collaborated within an agile team contributing to the full software development
+                                lifecycle</li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Java</span><span>Spring Boot</span><span>REST
+                                APIs</span><span>PostgreSQL</span><span>Authentication</span>
+                        </div>
+                    </div>
+                    <div class="tab-panel" id="gssoc">
+                        <h3 class="job-title">Open Source Contributor <span class="job-company">@ GirlScript Summer of
+                                Code</span></h3>
+                        <p class="job-meta">May 2023 — August 2023 • Remote</p>
+                        <ul class="job-list">
+                            <li>Demonstrated ownership by independently identifying, triaging, and resolving over
+                                <strong>10 critical issues</strong> in large-scale open-source projects
+                            </li>
+                            <li>Improved overall platform stability and performance by <strong>20%</strong> through
+                                targeted bug fixes and feature enhancements</li>
+                            <li>Collaborated effectively with a diverse community of <strong>500+ developers</strong>,
+                                participating in code reviews and adhering to professional best practices</li>
+                            <li>Created comprehensive documentation to improve project accessibility</li>
+                        </ul>
+                        <div class="job-tags">
+                            <span>Open Source</span><span>Git</span><span>GitHub</span><span>Code
+                                Review</span><span>Documentation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-showcase">
+                <article class="project-card featured">
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">Room Booking System — Roomeo</h3>
+                        <div class="project-description">
+                            <p>A scalable, full-stack room booking platform designed to manage over <strong>500
+                                    concurrent users</strong>. Features secure JWT authentication, AWS S3 media storage,
+                                and a responsive React.js interface for seamless booking experiences.</p>
+                        </div>
+                        <ul class="project-features">
+                            <li>JWT-based authentication & authorization</li>
+                            <li>AWS S3 for scalable media storage</li>
+                            <li>Responsive UI with React.js</li>
+                            <li>Real-time availability updates</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>React.js</span><span>Spring Boot</span><span>JWT</span><span>AWS
+                                S3</span><span>PostgreSQL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yugayush/Roomeo.git" class="project-link" aria-label="GitHub">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-img-wrapper">
+                            <img src="roomeo.jpg" alt="Roomeo - Room Booking System">
+                        </div>
+                    </div>
+                </article>
+
+                <article class="project-card featured reverse">
+                    <div class="project-content">
+                        <span class="project-label">Featured Project</span>
+                        <h3 class="project-title">LinkedIn Auto-Connect Extension</h3>
+                        <div class="project-description">
+                            <p>A Chrome extension that automates LinkedIn connection requests, reducing manual
+                                networking effort by over <strong>90%</strong>. Features randomized delays to mimic
+                                human behavior and ensure account safety.</p>
+                        </div>
+                        <ul class="project-features">
+                            <li>Reduced manual networking by 90%</li>
+                            <li>Randomized delays for safety</li>
+                            <li>Intuitive user interface</li>
+                            <li>Customizable connection settings</li>
+                        </ul>
+                        <div class="project-tech">
+                            <span>JavaScript</span><span>Chrome APIs</span><span>HTML5</span><span>CSS3</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/yugayush/LinkedIn-Auto-Connect.git" class="project-link"
+                                aria-label="GitHub">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="project-link" aria-label="External Link">
+                                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                                    <polyline points="15 3 21 3 21 9" />
+                                    <line x1="10" y1="14" x2="21" y2="3" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-image">
+                        <div class="project-img-wrapper">
+                            <img src="linkedin-extension.jpg" alt="LinkedIn Auto-Connect Extension">
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <h2 class="section-title">Skills & Technologies</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-wrapper">
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><span class="skill-icon">💻</span>Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><span class="skill-icon">🛠️</span>Frameworks</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Spring Boot</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">React.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">Redux</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><span class="skill-icon">🗄️</span>Databases</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">Redis</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-group">
+                    <h3 class="skill-group-title"><span class="skill-icon">☁️</span>Tools & Cloud</h3>
+                    <div class="skill-items">
+                        <div class="skill-item"><span class="skill-name">Git/GitHub</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">AWS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item"><span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skills-tags">
+                <h3>Also experienced with:</h3>
+                <div class="tags-cloud">
+                    <span>Data Structures</span><span>Algorithms</span><span>System Design</span><span>OOD</span>
+                    <span>REST APIs</span><span>Postman</span><span>Agile</span><span>Tailwind CSS</span>
+                    <span>Material UI</span><span>Netlify</span><span>EC2</span><span>S3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header centered">
+                <span class="section-number">04</span>
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">I'm currently looking for new opportunities & love connecting with fellow Devs.
+                    My inbox is always open.
+                    Whether you have a question, a project idea, or just want to say hi — I'll surely get back
+                    to you! as soon as possible.</p>
+                <div class="contact-grid">
+                    <a href="mailto:yugayush123@gmail.com" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Email</span>
+                            <span class="contact-value">yugayush123@gmail.com</span>
+                        </div>
+                    </a>
+                    <a href="tel:+918271156888" class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Phone</span>
+                            <span class="contact-value">+91-8271156888</span>
+                        </div>
+                    </a>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg>
+                        </div>
+                        <div class="contact-info">
+                            <span class="contact-label">Location</span>
+                            <span class="contact-value">Bengaluru, India</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/yug-swarnkar-26b9b8220/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/yugayush" target="_blank">GitHub</a>
+                <a href="https://leetcode.com/u/yugayush/" target="_blank">LeetCode</a>
+                <a href="https://x.com/yugayush_" target="_blank">X</a>
+            </div>
+            <p class="footer-credit">Designed & Built by <strong>Yug Swarnkar</strong></p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
